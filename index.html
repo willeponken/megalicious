@@ -1,0 +1,90 @@
+<!--
+	Copyright (C) 2013 William Wennerström
+	This file is part of MEGALICIOUS.ORG
+-->
+
+<!--
+	Currently, this code is a mess, mostly because it's still under heavy development. 
+	Sorry about that...
+
+	TODO:
+	* Browser detection AKA anti Internet Explorer <10
+	* Highlighting #tag links
+	* Rename some classes and id's because they have no relevant names
+	* HTML template for creating new pages
+	* CSS that works for every kind of html I throw at it
+	* Optimize
+	* Clean up everything
+-->
+
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+
+	<meta charset="utf-8">
+	<title>Main Page - megalicious.org</title>
+	<link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+	<link rel="stylesheet" href="/assets/css/mainstyle.css">
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="/assets/js/jquery.popupoverlay.js"></script>
+	<script src="/assets/js/jquery.cookie.js"></script>
+
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	</script><script type="text/javascript">var _gaq=_gaq || [];_gaq.push(['_setAccount', 'UA-35122845-1']);_gaq.push(['_trackPageview']);(function(){var ga=document.createElement('script');ga.type='text/javascript';ga.async=true;ga.src=('https:'==document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga, s);})();
+	</script>
+
+
+</head>
+
+<body>
+
+
+	<div id="my_modal">
+    	<!--<div id="hover">
+				<a href="#"><img id="mega_logo" src="/assets/img/megalicious.png" alt="Megalicious.org" longdesc="http://megalicious.org"></a>
+		</div>-->
+	</div>
+
+  <script>
+	if (! $.cookie("megaliciousCookie")){
+		$( "#my_modal" ).append( "<img src='/assets/img/notice.png' width='700' height='500' alt='Yet another place on the interwebs, welcome ->' usemap='#planetmap'><map name='planetmap'><area class='my_modal_close' shape='rect' coords='402,248,447,272' alt='Arrow' href=''>" );
+		$('#my_modal').popup();
+	$.cookie("megaliciousCookie", "firstSet", {"expires" : 7})
+}
+
+  </script>
+
+<div class=headcontainer><div class=menucontainer><a href="#top"><img class="logotype" src="/assets/img/trans.png" width="1" height="1" alt="" /></a><a href="/"><h1 class=logotype><span class=megastyle>Mega</span><span class=liciousstyle>licious</span></h1></a><table class=menu><tr><th><a class=menu href="/">home</a></th><th><a class=menu href="/documents">documents</a></th><th><a class=menu href="/projects">projects</a></th></tr></table></div></div>
+
+<div class=adcontainer></div>
+    
+<div class=maincontainer>
+	<a class="nocolor" href="#tag1"><h1 id="tag1"><img class="head" src="/assets/img/logo.png" alt="" />Megalomania + cake = Megalicious</h1></a>
+    
+    <hr />
+    
+	<h3>Megalicious.org is just another place on the interwebs.</h3>
+
+	<p><img class="right" src="/assets/img/Portal_Cake.png" alt="" />Ah, megalomania, isn't it wonderful? Exactly like a cake, yeah, a delicious cake. Megalicious! That's who I am, someone who may be a little bit too crazy about power, but also loves my cake of life, somewhat like a narcissist! But things will come together, stuff will fall in place, as the time passes. Because <a href="http://megalicious.org">megalicious.org</a> maybe also become more than just another place on the interwebs, but time will tell.</p>
+
+	<a class="nocolor" href="#tag2"><h2 id="tag2"><img class="semihead" src="/assets/img/logo.png" alt="" />What is this shit?</h2></a>
+    
+    <hr />
+
+	<h3>Don't be so rude!</h3>
+
+	<p>Well the truth is that, there's really nothing special to look at. But, I'm (and maybe some other folks) working on everything from small to huge projects. As I follow the philosophy; "Your first idea is seldom the best", I try to come up with ideas, make them real and test them out.</p>
+
+	<p>Currently, the largest project I'm working on is <a target="_blank" href="http://timebit.net">timebit.net</a>, which I wont tell any details on, but it actually looks promising!</p>
+
+	<p>During your visit, look around, may I recommend some <a target="_blank" href="/documents/other/rabarber-vin-med-tallbarste.html">rhubarb wine, with a taste of pine</a>? (In swedish, sorry about that...)  No? Well then, what are you doing at my lawn, fuck off!</p>
+
+	<p> - Sincerely, William.</p>
+</div>
+
+<footer>
+    <hr />
+	<p>~ <a class="nohighlight" target="_blank" href="http://github.com/willeponken">William Wennerström</a> @ <a class="nohighlight" target="_blank" href="http://megalicious.org">megalicious.org</a> ~</p>
+</footer>
+</body>
+</html>
