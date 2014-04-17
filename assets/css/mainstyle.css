@@ -45,6 +45,10 @@ span.liciousstyle{color:#fff;}
 div.maincontainer{width:50%; margin-top: 58px; color:#fff; font-family:arial; font-size:90%; float:none; padding:1%; margin-left:auto; margin-right:auto;}
 div.headcontainer{background-color:#000; width:100%; margin-left:auto; margin-right:auto; height:auto; position:fixed; opacity:0.6; top:0; left:0;}
 div.menucontainer{width:50%; margin-right:auto; margin-left:auto;}
+@media (max-width: 960px) {
+	div.maincontainer{width:90%; margin-top: 58px; color:#fff; font-family:arial; font-size:90%; float:none; padding:1%; margin-left:auto; margin-right:auto;}
+	div.menucontainer{width:90%; margin-right:auto; margin-left:auto;}
+}
 
 /*footer*/
 footer{text-align:center; color:#fff; font-family:arial; font-size:80%; max-width:50%; margin-left:auto; margin-right:auto;}
@@ -53,16 +57,8 @@ footer{text-align:center; color:#fff; font-family:arial; font-size:80%; max-widt
 #tag1:before, #tag2:before, #tag3:before, #tag4:before, #tag5:before, #tag6:before, #tag7:before, #tag8:before, #tag9:before, #tag10:before {display:block; content:""; height:92px; margin:-92px 0 0;}
 
 /*.popup & relatives - first visit popup*/
-.popup_background {
-	z-index: 2000;
-}
-.popup_wrapper {
-	z-index: 2001;
-}
-.popup_align,
-.popup_content {
-	*display: inline;
-	*zoom: 1;
-}
-#my_modal {outline: none; }
+.popup_background {z-index: 2000;}
+.popup_wrapper {z-index: 2001;}
+.popup_align,.popup_content {*display: inline;*zoom: 1;}
+#modal {outline: none; }
 #mega_logo {display: block; width:419px; margin-left:auto; margin-right:auto; opacity: 0.75;}
